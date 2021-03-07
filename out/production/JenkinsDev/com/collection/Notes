@@ -1,0 +1,32 @@
+Jenkins:Jenkins:
+ What are servers:
+   1)Stay power on all the time
+   2)Strong internet connection (in GBps) all the time
+   3) A lot of resources LIKE RAM disk etc
+        ==========================================
+  1) Developers will develop the code
+  2)Runs the unit test if everything goes well ask the DEVops person to build
+   that code and deploy the code on DEV servers
+  3)Developers verifies that code on DEV server
+  4)Request to DEVOPS person to deploy it on the integration server
+  5)Tester will ask DEVops person to deploy the code to QA server
+  6)Tester may ask again DEVOPS person  deploy it on the Performance server,Security testing server
+  7)Staging servers(replica of production server) UAT server on which UAT is performed
+  8) To production server
+   Issues in the manuel TESTING/deployment
+          1)Time Consuming
+          2)if multiple developers are working there can be issues in build and to fix tjhose issues
+          we may need to look all of the newly added code
+          3)No Automation means a lot of manual effort
+          How to build a simple job?
+          LOGIN to JENKINS
+          http://jenkins.syntaxtechs.net:8080/
+          username -admin
+          password-admin
+          click on a new item
+          give it a name
+          click on freestyle project
+          click on apply and save
+          scroll down and click on build steps
+          write echo "any message"
+          click on save and build the project
